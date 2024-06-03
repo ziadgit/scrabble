@@ -23,10 +23,18 @@ function findWords(inputString: string, dictionary:string[]): string[] {
         return wordCounts;
     }
 
+    // filter the dictionary to get rid of words that contain characters not at all in inputString
+    let filteredDictionary = dictionary.filter((word) => {
+        for (let char of word) {
+            if (!charCounts[char]) return false;
+        }
+        return true;
+    });
+
     // array for valid words
     let validWords: string[] = [];
 
-    for (let word of dictionary) {
+    for (let word of filteredDictionary) {
         let wordCounts = dictCharCounts(word);
         let isValid = true;
 

@@ -22,10 +22,19 @@ function findWords(inputString, dictionary) {
         }
         return wordCounts;
     };
+    // filter the dictionary to get rid of words that contain characters not at all in inputString
+    var filteredDictionary = dictionary.filter(function (word) {
+        for (var _i = 0, word_2 = word; _i < word_2.length; _i++) {
+            var char = word_2[_i];
+            if (!charCounts[char])
+                return false;
+        }
+        return true;
+    });
     // array for valid words
     var validWords = [];
-    for (var _a = 0, dictionary_1 = dictionary; _a < dictionary_1.length; _a++) {
-        var word = dictionary_1[_a];
+    for (var _a = 0, filteredDictionary_1 = filteredDictionary; _a < filteredDictionary_1.length; _a++) {
+        var word = filteredDictionary_1[_a];
         var wordCounts = dictCharCounts(word);
         var isValid = true;
         for (var char in wordCounts) {
