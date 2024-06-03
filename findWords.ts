@@ -23,6 +23,9 @@ function findWords(inputString: string, dictionary:string[]): string[] {
         return wordCounts;
     }
 
+    // array for valid words
+    let validWords: string[] = [];
+    
 
     return ["not", "real", "output"]
 }

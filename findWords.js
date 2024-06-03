@@ -13,8 +13,17 @@ function findWords(inputString, dictionary) {
     // do same thign but for every word in dictionary
     var dictCharCounts = function (word) {
         var wordCounts = {};
+        for (var _i = 0, word_1 = word; _i < word_1.length; _i++) {
+            var char = word_1[_i];
+            if (wordCounts[char] === undefined) {
+                wordCounts[char] = 0;
+            }
+            wordCounts[char]++;
+        }
         return wordCounts;
     };
+    // array for valid words
+    var validWords = [];
     return ["not", "real", "output"];
 }
 console.log(findWords("ate", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
