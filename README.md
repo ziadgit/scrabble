@@ -31,7 +31,9 @@ I added some new variations to my test case, and my existing approach found them
 the function is stylistically atypical, but it was interesting to explore.
 
 Here is a snippet of that attempt:
+
+```
 function findWords(inputString: string, dictionary: string[]): string[] {
     let TrieNode = function() {
         return {
-
+```
