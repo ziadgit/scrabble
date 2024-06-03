@@ -1,6 +1,15 @@
 function findWords(inputString: string, dictionary:string[]): string[] {
     // make a hashmap of character occurances in inputString
     let charCounts: {[key: string]: number} = {};
+
+    for (let char of inputString) {
+        if (charCounts[char] === undefined) {
+            charCounts[char] = 0;
+        }
+        charCounts[char]++
+    }
+    console.log(inputString);
+    console.log(charCounts);
     return ["not", "real", "output"]
 }
 
