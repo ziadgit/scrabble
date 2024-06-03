@@ -73,7 +73,7 @@ let testCases = [
     { word: "web", dictionary: ["web", "we", "be", "b", "ebb", "eb", "ewe"] },
     { word: "application", dictionary: ["application", "app", "cat", "cata", "plate", "tion", "platon"] },
     { word: "algorithm", dictionary: ["algorithm", "al", "go", "rhythm", "algo", "rhythm", "log", "mum"] },
-    { word: "database", dictionary: ["database", "data", "base", "data", "base", "db", "dabase"] },
+    { word: "database", dictionary: ["database", "data", "base", "bsae", "data", "base", "db", "dabase"] },
     { word: "programming", dictionary: ["programming", "program", "gram", "ram", "gaming", "gong", "roam", "map"] },
     { word: "development", dictionary: ["development", "develop", "ment", "dev", "even", "eep", "tomb"] },
     { word: "interface", dictionary: ["interface", "inter", "ace", "face", "int", "tin", "ear"] },

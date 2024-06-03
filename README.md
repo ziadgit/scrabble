@@ -26,4 +26,12 @@ This process was broken down into a few steps with some anonymous functions for 
 **Futher Ideas**
 If I were to continue on this, I would develop a test case generator based in part on the english dictionary for the input string, and randomly generated substrings, perhaps reusing some code from my permutation generator. This would allow for a more stress tested algorithm for time and space complexity.
 
+After completion, I reviewed some other approaches that might be applicable, such as the https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm
+I added some new variations to my test case, and my existing approach found them, where as the trie based approach did not. Also, containing the trie data structure within
+the function is stylistically atypical, but it was interesting to explore.
+
+Here is a snippet of that attempt:
+function findWords(inputString: string, dictionary: string[]): string[] {
+    let TrieNode = function() {
+        return {
 
