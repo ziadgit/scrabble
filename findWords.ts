@@ -25,9 +25,22 @@ function findWords(inputString: string, dictionary:string[]): string[] {
 
     // array for valid words
     let validWords: string[] = [];
-    
 
-    return ["not", "real", "output"]
+    for (let word of dictionary) {
+        let wordCounts = dictCharCounts(word);
+        let isValid = true;
+
+        for(let char in wordCounts) {
+            if (charCounts[char] === undefined || charCounts[char] < wordCounts[char]) {
+                isValid = false;
+                break;
+            }
+        }
+         if(isValid) {
+            validWords.push(word);
+         }
+    }
+    return validWords
 }
 
 console.log(findWords("ate", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));

@@ -24,7 +24,21 @@ function findWords(inputString, dictionary) {
     };
     // array for valid words
     var validWords = [];
-    return ["not", "real", "output"];
+    for (var _a = 0, dictionary_1 = dictionary; _a < dictionary_1.length; _a++) {
+        var word = dictionary_1[_a];
+        var wordCounts = dictCharCounts(word);
+        var isValid = true;
+        for (var char in wordCounts) {
+            if (charCounts[char] === undefined || charCounts[char] < wordCounts[char]) {
+                isValid = false;
+                break;
+            }
+        }
+        if (isValid) {
+            validWords.push(word);
+        }
+    }
+    return validWords;
 }
 console.log(findWords("ate", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
 // Expected output: ["ate", "eat", "tea"]
