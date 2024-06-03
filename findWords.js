@@ -76,7 +76,7 @@ var testCases = [
     { word: "development", dictionary: ["development", "develop", "ment", "dev", "even", "eep", "tomb"] },
     { word: "interface", dictionary: ["interface", "inter", "ace", "face", "int", "tin", "ear"] },
     { word: "software", dictionary: ["software", "soft", "ware", "war", "far", "oft", "fare"] },
-    { word: "function", dictionary: ["function", "fun", "funct", "tion", "funn", "funk", "tick"] },
+    { word: "function", dictionary: ["function", "fun", "funct", "fnuct", "tion", "funn", "funk", "tick"] },
     { word: "aabbc", dictionary: ["abc", "abb", "aabb", "aac", "bca", "cba"] }
 ];
 console.log(findWords("ate", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
