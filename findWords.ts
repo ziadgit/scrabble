@@ -10,6 +10,14 @@ function findWords(inputString: string, dictionary:string[]): string[] {
     }
     console.log(inputString);
     console.log(charCounts);
+
+    // do same thign but for every word in dictionary
+    let dictCharCounts = (word: string): {[key: string]: number} => {
+        let wordCounts: {[key: string]: number} = {};
+        return wordCounts;
+    }
+
+
     return ["not", "real", "output"]
 }
 

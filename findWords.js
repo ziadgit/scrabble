@@ -10,6 +10,11 @@ function findWords(inputString, dictionary) {
     }
     console.log(inputString);
     console.log(charCounts);
+    // do same thign but for every word in dictionary
+    var dictCharCounts = function (word) {
+        var wordCounts = {};
+        return wordCounts;
+    };
     return ["not", "real", "output"];
 }
 console.log(findWords("ate", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
