@@ -44,10 +44,13 @@ function findWords(inputString: string, dictionary:string[]): string[] {
 }
 
 // Hardcoded test cases and dictionaries
+// Consider edge cases, such as input strings with a single character or repeated letters.
 let testCases = [
     { word: "ate", dictionary: ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"] },
+    { word: "a", dictionary: ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good", "a", "i"] },
     { word: "bar", dictionary: ["bar", "bra", "ar", "ba"] },
     { word: "hello", dictionary: ["hello", "hell", "helloo", "helo", "ho", "lo", "oll", "el"] },
+    { word: "ll", dictionary: ["hello", "hell", "helloo", "helo", "ho", "lo", "oll", "el", "lll"] },
     { word: "world", dictionary: ["world", "word", "lord", "old", "ow", "low", "or", "do"] },
     { word: "goodbye", dictionary: ["goodbye", "good", "bye", "god", "dog", "do", "go"] },
     { word: "programming", dictionary: ["programming", "program", "gram", "ram", "gaming", "gong", "roam", "map"] },
