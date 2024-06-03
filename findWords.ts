@@ -14,6 +14,12 @@ function findWords(inputString: string, dictionary:string[]): string[] {
     // do same thign but for every word in dictionary
     let dictCharCounts = (word: string): {[key: string]: number} => {
         let wordCounts: {[key: string]: number} = {};
+        for (let char of word) {
+            if(wordCounts[char] === undefined) {
+                wordCounts[char] = 0
+            }
+            wordCounts[char]++;
+        }
         return wordCounts;
     }
 
