@@ -19,9 +19,11 @@ var charCounts = {};
 
 My general idea for the algorithm was to count the occurances of charcters in the inputString, and then count occurances of characters in the dictionary, and compare the counts.
 
-In the final version, if a word i the hashmap generated from the dictionary words (word ) contain character counts (keys) not found at all in the inputString hash (charCounts) it is removed from the final comparison of the dictionary word character counts to the inputString character counts.
+In the final version, if a word in the hashmap generated from the dictionary words (word) contain character counts (keys) is not found at all in the inputString hashmap (charCounts) it is removed from the final comparison of the dictionary word character counts to the inputString character counts.
 
 This process was broken down into a few steps with some anonymous functions for style preference (some languages do not allow nested functions, and the prompt did not necessarily seem open to external helper functions perhaps for automated testing). Also, I had a previous naive attempt where the dictionary was iterated through, and if it wasn't a match, it would be removed from the array, however, that introduced a bug of the wrong index being used to slice out subsequent 'misses,' so I abandoned that approach. This bug resulted in me persuing the filter and truth test.
 
 **Futher Ideas**
 If I were to continue on this, I would develop a test case generator based in part on the english dictionary for the input string, and randomly generated substrings, perhaps reusing some code from my permutation generator. This would allow for a more stress tested algorithm for time and space complexity.
+
+
