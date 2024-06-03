@@ -8,8 +8,6 @@ function findWords(inputString, dictionary) {
         }
         charCounts[char]++;
     }
-    console.log(inputString);
-    console.log(charCounts);
     // do same thign but for every word in dictionary
     var dictCharCounts = function (word) {
         var wordCounts = {};

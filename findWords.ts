@@ -8,8 +8,6 @@ function findWords(inputString: string, dictionary:string[]): string[] {
         }
         charCounts[char]++
     }
-    console.log(inputString);
-    console.log(charCounts);
 
     // do same thign but for every word in dictionary
     let dictCharCounts = (word: string): {[key: string]: number} => {
