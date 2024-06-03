@@ -4,4 +4,6 @@ Implement a function named **`findWords`** that accepts two arguments: 1) an i
 
 **Experiments**
 
-Prior to this final version, my first attempt tried to create permutations of the input string, and then check those permutations against the included dictionary. This was slow, and did not account for substring permutations, so I switched to a hashmap wordcount approach.
+Prior to this final version, my first attempt tried to create permutations of the input string, and then check those permutations against the included dictionary. This was slow, and did not account for substring permutations, so I switched to a hashmap charCount approach.
+
+**
