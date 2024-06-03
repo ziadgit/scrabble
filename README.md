@@ -17,7 +17,7 @@ let charCounts: {[key: string]: number} = {};
 to the JavaScript
 var charCounts = {};
 
-My general idea for the algorithm was to count the occurances of charcters in the inputString, and then count occurances of characters in the dictionary, and compare the counts.
+My general idea for the algorithm was to count the occurances of charcters in the inputString, and then count occurrences of characters in the dictionary, and compare the counts.
 
 In the final version, if a word in the hashmap generated from the dictionary words (word) contain character counts (keys) is not found at all in the inputString hashmap (charCounts) it is removed from the final comparison of the dictionary word character counts to the inputString character counts.
 
