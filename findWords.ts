@@ -50,7 +50,7 @@ let testCases = [
     { word: "a", dictionary: ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good", "a", "i"] },
     { word: "bar", dictionary: ["bar", "bra", "ar", "ba"] },
     { word: "hello", dictionary: ["hello", "hell", "helloo", "helo", "ho", "lo", "oll", "el"] },
-    { word: "ll", dictionary: ["hello", "hell", "helloo", "helo", "ho", "lo", "oll", "el", "lll"] },
+    { word: "ll", dictionary: ["hello", "hell", "helloo", "helo", "ho", "lo", "oll", "el", "lll", "ll"] },
     { word: "world", dictionary: ["world", "word", "lord", "old", "ow", "low", "or", "do"] },
     { word: "goodbye", dictionary: ["goodbye", "good", "bye", "god", "dog", "do", "go"] },
     { word: "programming", dictionary: ["programming", "program", "gram", "ram", "gaming", "gong", "roam", "map"] },
@@ -82,3 +82,12 @@ console.log(findWords("ate", ["ate", "eat", "tea", "dog", "do", "god", "goo", "g
 
 console.log(findWords("oogd", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
 // Expected output: ["dog", "do", "god", "goo", "go", "good"]
+
+// Iterate over the test cases
+testCases.forEach((testCase, index) => {
+    console.log(`\nTest Case ${index + 1}:`);
+    console.log("Input String:", testCase.word);
+    console.log("Dictionary:", testCase.dictionary);
+    let result = findWords(testCase.word, testCase.dictionary);
+    console.log("Result:", result);
+});
